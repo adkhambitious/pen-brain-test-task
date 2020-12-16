@@ -1,0 +1,105 @@
+.service {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(2, 210px);
+    grid-column-gap: 90px;
+    grid-row-gap: 20px;
+}
+
+.service__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-img {
+    position: absolute;
+    width: auto;
+    height: 130px;
+    z-index: 5;
+    margin: auto;
+    margin-top: -7px;
+}
+
+.service-img_video {
+    height: 160px;
+    margin-top: -20px;
+}
+
+.service-name_about-us {
+    color: rgb(13, 236, 237);
+}
+
+.big-circle {
+    background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.middle-circle {
+    background-color: rgb(255, 255, 255, 0.3);
+    border: 20px solid rgb(255, 255, 255);
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.service-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima Nova Bold';
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.service-name_about-us {
+    color: rgb(13, 236, 237)
+}
+
+.service-name:hover {
+    color: rgb(13, 236, 237)
+}
+
+.service-name__img {
+    margin-left: 15px;
+}
+
+.service-img_about-us {
+    width: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .service {
+        grid-template-columns: repeat(1, 210px);
+        grid-template-rows: repeat(6, 170px);
+        grid-row-gap: 20px;
+    }
+    
+    .big-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .middle-circle {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .service-img {
+        height: 100px;
+    }
+    
+    .service-name {
+        text-decoration: none;
+        font-size: 13px;
+    }
+}

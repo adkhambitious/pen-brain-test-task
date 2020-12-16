@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("/images/pic.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    background-color: rgb(246, 210, 216, 0.9);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+
+.header__logo, .header__time-schedule, .header__contacts {
+    display: flex;
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova Bold";
+}
+
+.header__time-schedule {
+    font-size: 12px;
+}
+
+.logo-name {
+    font-family: "Proxima Nova Bold";
+}
+    
+.header__logo {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.contacts-item {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.call-to {
+    color: rgb(11, 199, 200);
+}
+
+.header__menu {
+    display: flex;
+    height: 100%;
+    width: 480px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Proxima Nova Bold";
+}
+
+.menu-items_prices {
+    display: flex;
+}
+
+.menu-list__link {
+    text-decoration: none;
+    color: rgb(52, 24, 18);
+    font-size: 12px;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.inverse-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 109px;
+}
+
+.inverse-logo__img {
+    width: 95px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+}
+
+.title {
+    font-size: 48px;
+    font-family: "Proxima Nova Bold";
+}
+
+.get-gift {
+    font-family: "Proxima Nova Bold";
+    font-size: 28px;
+}
+
+.registration {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(13, 236, 237);
+    border: 6px solid rgb(194, 202, 207);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Proxima Nova Bold";
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 768px) { 
+    .information {
+        height: 180px;
+    }
+    
+    .title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .get-gift {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .inverse-logo {
+        height: 80px;
+    }
+    
+    .inverse-logo__img {
+        width: 60px;
+    }
+}

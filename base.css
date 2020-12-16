@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('./fonts/ProximaNova-Bold.woff') format('woff'),
+    url('./fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
